@@ -127,6 +127,8 @@ pgm1.add_edge("lemons", "scurvy")
 pgm1.render()
 plt.title("1747 Understanding: Lemons Prevent Scurvy", fontsize=14, pad=20)
 ```
+#### Understanding 
+- **Empirical knowledge can work without understanding (but is fragile)**
 
 ### DAG 2: The Misguided Belief (Wrong Understanding)
 
@@ -141,11 +143,11 @@ plt.title("1747 Understanding: Lemons Prevent Scurvy", fontsize=14, pad=20)
 #| label: dag-2-misguided
 #| echo: false
 
-# DAG 2: The Misguided Belief - Acid kills bacteria (VERTICAL LAYOUT)
+# DAG 2: The Misguided Belief - Acid kills bacteria (DIAGONAL LAYOUT)
 pgm2 = daft.PGM(dpi=150)
 
-# Add nodes for the incorrect causal chain - arranged vertically (top to bottom)
-pgm2.add_node("acid", "Acid", 2, 3, aspect=2.5, scale=1.2,
+# Add nodes for the incorrect causal chain - arranged diagonally (top-left to bottom-right)
+pgm2.add_node("acid", "Acid", 1, 3, aspect=2.5, scale=1.2,
              plot_params={
                  'facecolor': '#FFB3B3',  # Light red (warning)
                  'edgecolor': '#CC0000',   # Dark red border
@@ -161,7 +163,7 @@ pgm2.add_node("bacteria", "Bacteria", 2, 2, aspect=2.5, scale=1.2,
                  'alpha': 0.85,
              })
 
-pgm2.add_node("scurvy", "Scurvy", 2, 1, aspect=2.5, scale=1.2,
+pgm2.add_node("scurvy", "Scurvy", 3, 1, aspect=2.5, scale=1.2,
              plot_params={
                  'facecolor': '#FFD4D4',  # Very light red
                  'edgecolor': '#B22222',   # Firebrick border
@@ -177,6 +179,9 @@ pgm2.add_edge("bacteria", "scurvy")
 pgm2.render()
 plt.title("Misguided Belief: Acid Kills Bacteria → Prevents Scurvy", fontsize=14, pad=20)
 ```
+
+#### Understanding 
+- **Wrong models are dangerous - they lead to wrong interventions**
 
 ### DAG 3: The 1928 Understanding (Complete and Correct)
 
@@ -218,6 +223,10 @@ pgm3.add_edge("vitamin_c", "scurvy")
 pgm3.render()
 plt.title("1928 Understanding: Vitamin C Prevents Scurvy (Correct!)", fontsize=14, pad=20)
 ```
+
+#### Understanding 
+- **True understanding enables robust, generalizable solutions**
+
 
 ## Student Requirements Section: Mastering DAFT Visualization {#student-analysis-section}
 
