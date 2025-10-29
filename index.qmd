@@ -122,7 +122,10 @@ pgm1.render()
 plt.title("1747 Understanding: Lemons Prevent Scurvy", fontsize=14, pad=20)
 ```
 #### Understanding 
-- **Empirical knowledge can work without understanding (but is fragile)**
+- Shows the observed relationship (lemons prevent scurvy)
+- But doesn't explain WHY it works
+- Limitation: Without understanding mechanism, easy to make mistakes
+
 
 ### DAG 2: The Misguided Belief (Wrong Understanding)
 
@@ -168,7 +171,10 @@ plt.title("Misguided Belief: Acid Kills Bacteria → Prevents Scurvy", fontsize=
 ```
 
 #### Understanding 
-- **Wrong models are dangerous - they lead to wrong interventions**
+- Shows an incorrect causal model
+- Demonstrates danger of wrong assumptions
+- Led to failed interventions (using vinegar instead of lemons)
+- Real-world consequence: Scurvy returned and killed thousands
 
 ### DAG 3: The 1928 Understanding (Complete and Correct)
 
@@ -214,7 +220,10 @@ plt.title("1928 Understanding: Vitamin C Prevents Scurvy (Correct!)", fontsize=1
 ```
 
 #### Understanding 
-- **True understanding enables robust, generalizable solutions**
+- Shows the true causal mechanism
+- Explains why the treatment works
+- Enables reliable, generalizable solutions
+- Can now find Vitamin C in ANY source (not just lemons)
 
 
 ## Student Requirements Section: Mastering DAFT Visualization {#student-analysis-section}
